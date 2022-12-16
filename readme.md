@@ -16,3 +16,8 @@ the application is a simple console application that checks if there any .py scr
 
 1. add a .py script to the directory where the executable is located
 2. run the executable
+
+## Example
+
+1. the executable `CommandLine.exe` can be found in the `build' directory of the repository and it is a compiled version of the code in the repository
+2. i have also added 3 test python scripts to the repository so you can test the application

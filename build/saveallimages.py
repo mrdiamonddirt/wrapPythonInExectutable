@@ -1,3 +1,5 @@
+# Description: Downloads all images from a webpage and saves them to a directory
+
 import requests
 import os
 from bs4 import BeautifulSoup

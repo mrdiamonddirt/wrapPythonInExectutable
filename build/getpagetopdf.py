@@ -39,6 +39,7 @@ def generate_webpage_pdf(url, filename):
     # Save the PDF file to the specified filepath
     with open(filepath, 'wb') as f:
         f.write(pdf_bytes)
+    
 
     # Close the browser
     driver.quit()

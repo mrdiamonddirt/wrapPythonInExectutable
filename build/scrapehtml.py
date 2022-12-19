@@ -3,8 +3,8 @@
 # You can install the requests module using pip, the Python package manager.
 # pip install requests
 
-
 import requests
+import os
 
 def scrape_html(url):
     """Scrape the HTML data from the given URL and return it as a string."""
@@ -17,8 +17,14 @@ def save_html(html, filename):
         f.write(html)
 
 # Scrape the HTML data from a URL
-url = 'http://www.google.com'
+urlinput = input('Enter a url: ')
+url = f'http://{urlinput}'
 html = scrape_html(url)
 
+filename = input('Enter a filename: ')
+
+if not os.path.exists('html'):
+    os.makedirs('html')
+
 # Save the HTML data to a file
-save_html(html, 'google.html')
+save_html(html, f'html/{filename}.html')

@@ -49,8 +49,10 @@ def save_images(image_urls, directory):
             print(f'Error downloading {url}: {e}')
 
 
-# Example usage:
+url_input = input('Enter a URL: ')
 
-url = 'https://www.google.com/'
+url = f'https://{url_input}/'
 image_urls = get_images(url)
+
+
 save_images(image_urls, 'images')

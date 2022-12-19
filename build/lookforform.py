@@ -3,8 +3,9 @@
 import requests
 from bs4 import BeautifulSoup
 
+url = input('Enter a url: ')
 # Send an HTTP request to the website
-response = requests.get("https://www.google.com")
+response = requests.get(f"https://{url}".format(url=url))
 
 # Check if the request was successful
 if response.status_code == 200:
